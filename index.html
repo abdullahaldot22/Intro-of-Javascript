@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calculation</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="box">
+            <div class="cont">
+                <p id="describe">Calculation between two Numbers: </p>
+                <p class="num">First one <br>60</p>
+                <p class="num">The second one <br>35</p>
+                <p class="result">0</p>
+                <div class="bp">
+                    <button onclick="Addition();">For Addition!</button>
+                    <button onclick="Subtraction();">For Subtraction!</button>
+                    <button onclick="Multiplication();">For Multiplication!</button>
+                    <button onclick="Division();">For Division!</button>
+                    <button onclick="Remainder();">The Remainder!</button>
+                    <button onclick="clearInterval();" style="background-color: rgba(151, 82, 82, 0.493);">Clear!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function Addition() {
+            var f = 60;
+            var s = 35;
+            var Add = f + s;
+            document.getElementsByClassName('result')[0].innerHTML = Add;
+        }
+
+        function Subtraction() {
+            var f = 60;
+            var s = 35;
+            var Sub = f - s;
+            document.getElementsByClassName('result')[0].innerHTML = Sub;
+        }
+
+        function Multiplication() {
+            var f = 60;
+            var s = 35;
+            var Multi = f * s;
+            document.getElementsByClassName('result')[0].innerHTML = Multi;
+        }
+
+        function Division() {
+            var f = 60;
+            var s = 35;
+            var Div = f / s;
+            document.getElementsByClassName('result')[0].innerHTML = Div;
+        }
+
+        function Remainder() {
+            var f = 60;
+            var s = 35;
+            var Rem = f % s;
+            document.getElementsByClassName('result')[0].innerHTML = Rem;
+        }
+
+        function clearInterval() {
+            document.getElementsByClassName('result')[0].innerHTML = '0';
+        }
+        // Window.alert("Keep Going!!");
+        // document.write("Calculation between two Numbers: ");
+        // document.getElementsByClassName("describe").innerHTML = "Calculation between two Numbers:";
+        // document.getElementsById('describe').style = "color:white, font-size:20px";
+    </script>
+</body>
+
+</html>
